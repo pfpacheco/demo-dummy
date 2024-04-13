@@ -8,6 +8,19 @@
 $ npm install --save demo-dummy
 ```
 
+## Create .env file
+
+#### SERVERNAME_ENV=localhost
+#### SERVERPORT_ENV=3000
+#### MONGODB_URI=mongodb://mongo:p7oyGer21gfNix6LMgZr@localhost:27017/web
+
+### Run Mongo DB First
+
+```docker-compose
+docker-compose -f ./_development/compose.yaml up --build
+```
+#### Use `--build` only at firs time
+
 ## Build
 
 ```zsh
@@ -25,13 +38,6 @@ npm run start:dev
 ```zsh
 npm run start
 ```
-
-## Create .env file
-
-
-#### SERVERNAME_ENV=localhost
-#### SERVERPORT_ENV=3000
-#### MONGODB_URI=mongodb://mongo:p7oyGer21gfNix6LMgZr@localhost:27017/web
 
 ## License
 
