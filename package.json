@@ -1,0 +1,41 @@
+{
+  "name": "demo-dummy",
+  "version": "1.0.0",
+  "description": "The demo dummy concept project",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "server": "node src/app.js",
+    "build": "babel src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pfpacheco/demo-dummy.git"
+  },
+  "author": "Paulo Francesco Pacheco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfpacheco/demo-dummy/issues"
+  },
+  "homepage": "https://github.com/pfpacheco/demo-dummy#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "generate": "^0.14.0",
+    "generate-readme": "^0.3.1",
+    "generator": "^1.0.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.3.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/register": "^7.23.7"
+  }
+}
