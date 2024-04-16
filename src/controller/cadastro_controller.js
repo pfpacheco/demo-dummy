@@ -1,9 +1,9 @@
 import {v4 as uuidv4} from 'uuid';
-import DemoDummyService from "../service/demo-dummy-service.js";
+import CadastroService from "../service/cadastro_service.js";
 
-class DemoDummyController {
+class CadastroController {
     constructor() {
-        this.demoDummyService = new DemoDummyService();
+        this.demoDummyService = new CadastroService();
     }
 
     async save(req) {
@@ -17,9 +17,9 @@ class DemoDummyController {
             };
             return await this.demoDummyService.save(data);
         } catch (err) {
-            console.log(`Error on controller: ${err}`);
+            throw new Error(err.message);
         }
     }
 }
 
-export default DemoDummyController;
+export default CadastroController;

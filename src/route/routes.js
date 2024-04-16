@@ -1,8 +1,8 @@
 import express from "express";
-import DemoDummyController from "../controller/demo-dummy-controller.js";
+import CadastroController from "../controller/cadastro_controller.js";
 
 const router = express.Router();
-const demoDummyController = new DemoDummyController();
+const demoDummyController = new CadastroController();
 
 router.use((req, res, next) => {
     console.log('Time: ', Date.now());
